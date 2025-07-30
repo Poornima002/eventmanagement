@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventEase - Your Event, Our Passion</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://v3.tailwindcss.com/"></script>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="task13.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-md py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-indigo-600 fw-bold fs-3" href="#">
+      <img src="./images/logo1.jpg" alt="EventEase Logo" class="me-2" style="width: 40px; height: 40px;" />
+      EventEase
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="text-white text-center py-20" style="background-color: #b9e4c9;" data-aos="fade-down">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-dark">Plan Your Perfect Event with EventEase</h1>
+    <p class="lead mt-3 text-dark">From weddings to conferences, we handle everything with precision and creativity.</p>
+    <a href="#contact" class="btn btn-dark mt-4 fw-bold">Get Started</a>
+  </div>
+</section>
+
+
+  <!-- Events Section -->
+  <section id="events" class="py-5 bg-white" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center text-2xl fw-bold mb-5">Upcoming Events</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm">
+            <img src="./images/img1.jpg" class="card-img-top" alt="Wedding">
+            <div class="card-body">
+              <h5 class="card-title">Wedding Reception</h5>
+              <p class="card-text">May 15, 2024<br>New York, NY</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card shadow-sm">
+            <img src="./images/img2.jpg" class="card-img-top" alt="Seminar">
+            <div class="card-body">
+              <h5 class="card-title">Corporate Seminar</h5>
+              <p class="card-text">June 20, 2024<br>San Francisco, CA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card shadow-sm">
+            <img src="./images/img3.jpeg" class="card-img-top" alt="Festival">
+            <div class="card-body">
+              <h5 class="card-title">Music Festival</h5>
+              <p class="card-text">July 8, 2024<br>Chicago, IL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-gray-100" data-aos="fade-right">
+    <div class="container text-center">
+      <h2 class="text-2xl fw-bold mb-4">About Us</h2>
+      <p class="mx-auto max-w-2xl">At <strong>EventEase</strong>, we specialize in creating unforgettable events tailored to your unique vision. Our experienced team ensures every detail is perfect, so you can relax and enjoy your special occasion.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" data-aos="fade-left">
+    <div class="container">
+      <h2 class="text-2xl fw-bold text-center mb-4">Contact</h2>
+      <p class="text-center mb-5">Have questions or want to start planning your event? Get in touch with us today!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="space-y-4">
+            <input type="text" class="form-control" placeholder="Name" required />
+            <input type="email" class="form-control" placeholder="Email" required />
+            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-indigo w-100 text-white bg-indigo-600 hover:bg-indigo-700">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-3 mt-4 shadow-inner text-sm">
+    &copy; 2025 EventEase. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
